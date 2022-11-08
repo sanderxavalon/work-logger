@@ -1,1 +1,13 @@
-select 1;
+INSERT INTO content_type VALUES (1, 'DIAGNOSIS');
+INSERT INTO content_type VALUES (2, 'SOLUTION');
+INSERT INTO content_type VALUES (3, 'WORK_LOG');
+INSERT INTO content_type VALUES (4, 'SYSTEM_NOTE');
+
+INSERT INTO job_type VALUES (1, 'BUG');
+INSERT INTO job_type VALUES (2, 'USER_STORY');
+INSERT INTO job_type VALUES (3, 'TASK');
+INSERT INTO job_type VALUES (4, 'CODE_DEFECT');
+
+INSERT INTO job_status VALUES (1, 'PENDING');
+INSERT INTO job_status VALUES (2, 'ON_WORKING');
+INSERT INTO job_status VALUES (3, 'CASE_CLOSE');
