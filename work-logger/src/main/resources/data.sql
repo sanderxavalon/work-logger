@@ -11,3 +11,6 @@ INSERT INTO job_type VALUES (4, 'CODE_DEFECT');
 INSERT INTO job_status VALUES (1, 'PENDING');
 INSERT INTO job_status VALUES (2, 'ON_WORKING');
 INSERT INTO job_status VALUES (3, 'CASE_CLOSE');
+
+INSERT INTO job VALUES (DEFAULT, 'Welcome', 3, '', DEFAULT);
+INSERT INTO content VALUES (DEFAULT, 1, 'Welcome', 1, 'welcome', DEFAULT, DEFAULT);
