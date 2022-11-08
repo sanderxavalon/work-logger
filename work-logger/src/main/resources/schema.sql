@@ -31,6 +31,12 @@ CREATE TABLE job (
     create_time TIMESTAMP(0) WITHOUT TIME ZONE
 );
 
+CREATE TABLE attached_file (
+    id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    file_name VARCHAR(255) NOT NULL,
+    file_url VARCHAR(255) NOT NULL
+)
+
 CREATE TRIGGER CON_TYP AFTER INSERT ON content_type FOR EACH ROW CALL "com.sander.worklogger.trigger.H2Trigger";
 
 ALTER TABLE job ADD CONSTRAINT job_status_to_job_fk FOREIGN KEY (job_status_fk) REFERENCES job(id);
