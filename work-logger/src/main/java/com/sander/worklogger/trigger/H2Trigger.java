@@ -16,8 +16,8 @@ public class H2Trigger implements Trigger{
     @Override
     public void fire(Connection connection, Object[] oldRow, Object[] newRow) throws SQLException {
         Statement statement = connection.createStatement();
-        System.out.println(newRow[0].toString());
-        statement.execute("INSERT INTO CONTENT  VALUES(DEFAULT, \'TRIGGER\', 1, \'TRIGGER\', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP())");}
+        statement.execute("select 1");
+    }
 
     @Override
     public void close() throws SQLException {

@@ -12,7 +12,7 @@ public class H2TriggerExtend extends TriggerAdapter {
     @Override
     public void fire(Connection connection, ResultSet resultSet, ResultSet resultSet1) throws SQLException {
         Statement statement = connection.createStatement();
-        statement.execute("INSERT INTO CONTENT  VALUES(DEFAULT, \'TRIGGER\', 1, \'TRIGGER\', CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP())");
+        statement.execute("select 1");
     }
 
 }
