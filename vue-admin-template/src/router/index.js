@@ -89,6 +89,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/job',
+    component: Layout,
+    children: [
+      {
+        path: 'list',
+        name: 'Joblist',
+        component: () => import('@/views/job/index'),
+        meta: { title: 'Job-List', icon: 'essential-pen-tool-svgrepo-com' }
+      }
+    ]
+  },
+  {
     path: '/form',
     component: Layout,
     children: [
